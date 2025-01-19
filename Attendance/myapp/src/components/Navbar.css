@@ -1,0 +1,12 @@
+
+
+.nav {
+    display: flex;
+    justify-content: flex-end; /* Align the entire navbutt div to the right */
+    justify-content: space-between;
+  }
+  
+.navimg{
+    width: 45px;
+    height: 45px;
+}
