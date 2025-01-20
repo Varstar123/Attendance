@@ -6,6 +6,7 @@ import './Navbar.css'
 const Navbar = () => {
   return (
     <div>
+        <br /><br /><br /><br />
         <AppBar sx={{backgroundColor: '#222222'}}>
             <Toolbar className="nav">
                 <div className="navimg">
@@ -14,11 +15,11 @@ const Navbar = () => {
                 <div>
                     &nbsp;
                     <Link to="/login">
-                        <Button variant='contained' sx={{backgroundColor: '#222222'}}>Login</Button>
+                    <Button variant='contained' sx={{borderRadius: 2, backgroundColor: 'black', transition: 'all 0.3s ease-in-out','&:hover':{backgroundColor: 'white', color:'black', transform: 'scale(1.1)'}}}>Login</Button>
                     </Link>
-                    &nbsp;
+                    &nbsp;&nbsp;
                     <Link to="/creds">
-                    <Button variant='contained' sx={{backgroundColor: '#222222'}}>Creds</Button>
+                    <Button variant='contained' sx={{borderRadius: 2, backgroundColor: 'black', transition: 'all 0.3s ease-in-out','&:hover':{backgroundColor: 'white', color:'black', transform: 'scale(1.1)'}}}>Creds</Button>
                     </Link>     
                 </div>               
             </Toolbar>
