@@ -1,23 +1,26 @@
 import { useState } from 'react'
 import './App.css'
+import { Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
+import Adbar from './components/Adbar'
+import Electronics from './components/Electronics'
+import Insert from './components/Insert'
+import View from './components/View'
 import Login from './components/Login'
-import Creds from './components/Creds'
-import Calculator from './components/Calculator'
-
-import { Route , Routes } from 'react-router-dom'
+import Signup from './components/Signup'
 
 function App() {
   const [count, setCount] = useState(0)
-
   return (
     <>
-      <h1>-=-=-=-=-ATTENDANCE CALCULATOR-=-=-=-=-</h1>
-      <Navbar/>
+    <Navbar/>
       <Routes>
-        <Route path = "/login" element = {<Login />} />
-        <Route path = "/creds" element = {<Creds />} />
-        <Route path = "/calculator" element = {<Calculator />} />
+        <Route path='/home' element = { <Adbar/> }></Route>
+        <Route path='/electronics' element = { <Electronics/> }></Route>
+        <Route path='/add' element = { <Insert/> }></Route>
+        <Route path='/view' element = { <View/> }></Route>
+        <Route path='/login' element ={ <Login/>}></Route>
+         <Route path='/Signup' element ={ <Signup/>}></Route>
       </Routes>
     </>
   )
