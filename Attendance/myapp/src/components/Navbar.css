@@ -1,17 +1,4 @@
-
-
-.nav {
+.area1{
     display: flex;
-    justify-content: flex-end;
-    justify-content: space-between;
-  }
-  
-.navimg{
-    width: 45px;
-    height: 45px;
-    transition: all 0.3s ease-in-out;
-}
-
-.navimg:hover {
-  transform: scale(1.1);
+    justify-content: center;
 }
