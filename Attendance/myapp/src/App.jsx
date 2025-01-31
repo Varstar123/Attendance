@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import './App.css'
-import Navbar from './components/navbar'
+import Navbar from './components/Navbar'
 import Login from './components/Login'
 import Creds from './components/Creds'
+import Calculator from './components/Calculator'
+
 import { Route , Routes } from 'react-router-dom'
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
       <Routes>
         <Route path = "/login" element = {<Login />} />
         <Route path = "/creds" element = {<Creds />} />
+        <Route path = "/calculator" element = {<Calculator />} />
       </Routes>
     </>
   )
